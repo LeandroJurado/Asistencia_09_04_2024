@@ -10,15 +10,15 @@ public void setup() {
 }
 
 public void draw() {
- 
+  background(#FACA9A);
   dibujarRectangulos();
 }
 
 public void dibujarRectangulos() {
- for (float x=coordenadasRect.x; x<width; x += (ancho+distEntreRect)) {
-  rect(x,coordenadasRect.y,ancho,alto);
-  fill(255,0,0);
+ for (float y=coordenadasRect.y; y<height; y += (alto+distEntreRect)) {
+    for (float x=coordenadasRect.x; x<width; x += (ancho+distEntreRect)) {
+    rect(x,y,ancho,alto);
+    fill(255,0,0);
     }
-  
-
+ }
 }
